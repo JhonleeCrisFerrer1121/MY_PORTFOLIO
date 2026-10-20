@@ -1,0 +1,366 @@
+/* RESET AT UNIBERSAL NA STYLE */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    scroll-behavior: smooth;
+}
+
+/* GIRLY / PASTEL PINK COLOR PALETTE */
+body {
+    background-color: #fff5f7;
+    color: #4a3b40;
+    line-height: 1.6;
+}
+
+h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #d47a96;
+    position: relative;
+}
+
+h2::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: #ffb7ce;
+    margin: 10px auto 0 auto;
+    border-radius: 2px;
+}
+
+/* NAVIGATION BAR */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 20px 10%;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    border-bottom: 2px solid #ffe3ec;
+}
+
+.navbar .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #d47a96;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #7d636b;
+    margin-left: 25px;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+/* HOVER EFFECT PARA SA NAV LINKS */
+.nav-links a:hover {
+    color: #ff85a2;
+}
+
+/* SECTIONS COMMON PADDING */
+section {
+    padding: 120px 10% 60px 10%;
+}
+
+/* HOME / HERO SECTION */
+.hero-section {
+    background: linear-gradient(135deg, #ffeef2 0%, #fff5f7 100%);
+    text-align: center;
+    min-height: 85vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile-img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #ffffff;
+    box-shadow: 0 8px 20px rgba(212, 122, 150, 0.2);
+    margin-bottom: 20px;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.highlight {
+    color: #d47a96;
+}
+
+.tagline {
+    font-style: italic;
+    font-size: 1.3rem;
+    color: #a3858f;
+    margin-bottom: 15px;
+}
+
+.intro {
+    font-size: 1.1rem;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* ABOUT ME SECTION */
+.about-section {
+    background-color: #ffffff;
+}
+
+.about-container {
+    max-width: 700px;
+    margin: 0 auto;
+    background-color: #fffbfb;
+    padding: 30px;
+    border-radius: 15px;
+    border: 1px solid #ffe3ec;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.02);
+}
+
+.about-container p {
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+}
+
+.about-container strong {
+    color: #d47a96;
+    display: inline-block;
+    width: 150px;
+}
+
+/* SKILLS SECTION (USING FLEXBOX) */
+.skills-section {
+    background-color: #fff5f7;
+}
+
+.skills-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.skill-card {
+    background-color: #ffffff;
+    padding: 15px 30px;
+    border-radius: 25px;
+    font-weight: 600;
+    color: #7d636b;
+    border: 2px solid #ffdae3;
+    box-shadow: 0 4px 10px rgba(212, 122, 150, 0.05);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.skill-card:hover {
+    transform: translateY(-5px);
+    background-color: #ffb7ce;
+    color: white;
+    border-color: #ffb7ce;
+}
+
+/* ACHIEVEMENTS & GOALS SECTION (USING FLEXBOX) */
+.achievements-section {
+    background-color: #ffffff;
+}
+
+.achievements-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.achieve-card {
+    background-color: #fff5f7;
+    border: 1px solid #ffe3ec;
+    border-radius: 15px;
+    padding: 30px;
+    width: 50%;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.02);
+}
+
+.achieve-card h3 {
+    color: #d47a96;
+    margin-bottom: 15px;
+    font-size: 1.3rem;
+}
+
+.achieve-card ul {
+    padding-left: 20px;
+}
+
+.achieve-card ul li {
+    margin-bottom: 10px;
+    font-size: 1.05rem;
+}
+
+/* PROJECTS SECTION (USING FLEXBOX LAYOUT) */
+.projects-section {
+    background-color: #fff5f7;
+}
+
+.projects-container {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.project-card {
+    display: flex;
+    background-color: #ffffff;
+    border-radius: 15px;
+    overflow: hidden;
+    border: 1px solid #ffe3ec;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.03);
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+    transform: scale(1.02);
+}
+
+.project-card img {
+    width: 40%;
+    object-fit: cover;
+    min-height: 220px;
+    border-right: 2px solid #ffe3ec;
+}
+
+.project-info {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 60%;
+}
+
+.project-info h3 {
+    font-size: 1.5rem;
+    color: #d47a96;
+    margin-bottom: 10px;
+}
+
+.project-info p {
+    font-size: 1rem;
+    margin-bottom: 15px;
+}
+
+.tech-used {
+    font-weight: bold;
+    color: #a3858f;
+    font-size: 0.9rem;
+}
+
+/* CONTACT SECTION */
+.contact-section {
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.contact-links {
+    margin: 20px auto 30px auto;
+    font-size: 1.1rem;
+}
+
+.contact-links p {
+    margin-bottom: 10px;
+}
+
+.contact-form {
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-form input, 
+.contact-form textarea {
+    padding: 15px;
+    border: 2px solid #ffdae3;
+    border-radius: 10px;
+    outline: none;
+    font-size: 1rem;
+    background-color: #ffffff;
+    transition: border-color 0.3s ease;
+}
+
+.contact-form input:focus, 
+.contact-form textarea:focus {
+    border-color: #ff85a2;
+}
+
+.contact-form button {
+    padding: 15px;
+    background-color: #ff85a2;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: #d47a96;
+}
+
+/* FOOTER */
+footer {
+    background-color: #fff5f7;
+    text-align: center;
+    padding: 25px;
+    color: #7d636b;
+    border-top: 2px solid #ffe3ec;
+    font-size: 0.9rem;
+}
+
+/* RESPONSIVE LAYOUT (Para sa mga Mobile Screens) */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        padding: 15px;
+    }
+    .nav-links {
+        margin-top: 10px;
+    }
+    .nav-links a {
+        margin: 0 10px;
+        font-size: 0.9rem;
+    }
+    .achievements-container {
+        flex-direction: column;
+    }
+    .achieve-card {
+        width: 100%;
+    }
+    .project-card {
+        flex-direction: column;
+    }
+    .project-card img {
+        width: 100%;
+        height: 200px;
+    }
+    .project-info {
+        width: 100%;
+    }
+    .hero-content h1 {
+        font-size: 2.2rem;
+    }
+}
